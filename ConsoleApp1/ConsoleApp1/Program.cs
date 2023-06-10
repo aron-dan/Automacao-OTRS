@@ -13,7 +13,12 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
         AutomationWeb automationWeb = new AutomationWeb();
-            automationWeb.WebTest();
+        ColetaDadosUsuario coletaDadosUsuario = new ColetaDadosUsuario();
+
+           string email = coletaDadosUsuario.ColetaDados();
+
+            Console.WriteLine(email);
+
 
         }
     }
