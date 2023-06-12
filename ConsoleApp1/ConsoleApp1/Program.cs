@@ -15,9 +15,7 @@ namespace ConsoleApp1
         AutomationWeb automationWeb = new AutomationWeb();
         ColetaDadosUsuario coletaDadosUsuario = new ColetaDadosUsuario();
 
-           string email = coletaDadosUsuario.ColetaDados();
-
-            Console.WriteLine(email);
+            automationWeb.login();
 
 
         }
