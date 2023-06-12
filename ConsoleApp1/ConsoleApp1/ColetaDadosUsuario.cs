@@ -9,9 +9,19 @@ namespace ConsoleApp1
 {
     public class ColetaDadosUsuario
     {
-        public String ColetaDados()
+        string email, senha;
+        public String ColetaDadosEmail()
         {
-            return Console.ReadLine();
+            Console.WriteLine("Digite o Email do OTRS:");
+            email = Console.ReadLine();
+            return email;
+        }
+
+        public String ColetaDadosSenha()
+        {
+            Console.WriteLine("Digite a senha do OTRS:");
+            senha = Console.ReadLine();
+            return senha;
         }
     }
 }
