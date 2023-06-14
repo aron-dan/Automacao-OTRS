@@ -16,6 +16,7 @@ namespace ConsoleApp1
         ColetaDadosUsuario coletaDadosUsuario = new ColetaDadosUsuario();
 
             automationWeb.login();
+            automationWeb.Automatio();
 
 
         }
