@@ -38,6 +38,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,12 +55,23 @@
   <ItemGroup>
     <Compile Include="AutomationWeb.cs" />
     <Compile Include="ColetaDadosUsuario.cs" />
+    <Compile Include="ColetaUserESenhaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColetaUserESenhaForm.Designer.cs">
+      <DependentUpon>ColetaUserESenhaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ColetaUserESenhaForm.resx">
+      <DependentUpon>ColetaUserESenhaForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Selenium.WebDriver.4.10.0\build\Selenium.WebDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.4.10.0\build\Selenium.WebDriver.targets')" />
