@@ -26,6 +26,7 @@ namespace ConsoleApp1
             driver.FindElement(By.Id("User")).SendKeys(email);
             driver.FindElement(By.Id("Password")).SendKeys(senha);
             driver.FindElement(By.Id("LoginButton")).Click();
+            driver.Close();
         }
     
     

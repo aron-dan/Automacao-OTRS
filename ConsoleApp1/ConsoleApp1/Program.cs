@@ -12,10 +12,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-        AutomationWeb automationWeb = new AutomationWeb();
+        //AutomationWeb automationWeb = new AutomationWeb();
         ColetaDadosUsuario coletaDadosUsuario = new ColetaDadosUsuario();
+        ColetaUserESenhaForm coletaUserESenhaForm = new ColetaUserESenhaForm();
 
-            automationWeb.login();
+
+            coletaUserESenhaForm.ShowDialog();
+            //automationWeb.login();
 
 
         }
