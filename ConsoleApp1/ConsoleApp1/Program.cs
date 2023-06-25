@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 
 namespace ConsoleApp1
 {
@@ -12,13 +6,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-        //AutomationWeb automationWeb = new AutomationWeb();
+        AutomationWeb automationWeb = new AutomationWeb();
         ColetaDadosUsuario coletaDadosUsuario = new ColetaDadosUsuario();
         ColetaUserESenhaForm coletaUserESenhaForm = new ColetaUserESenhaForm();
+        
 
-
-            coletaUserESenhaForm.ShowDialog();
-            //automationWeb.login();
+            //coletaUserESenhaForm.ShowDialog();
+            automationWeb.login();
+            Console.ReadKey();
+            
+            
 
 
         }
