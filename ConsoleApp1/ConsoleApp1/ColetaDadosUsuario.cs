@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenQA.Selenium.DevTools.V112.Emulation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
@@ -9,19 +10,23 @@ namespace ConsoleApp1
 {
     public class ColetaDadosUsuario
     {
-        string email, senha;
-        public String ColetaDadosEmail()
+        ColetaUserESenhaForm ColetaUserESenhaForm = new ColetaUserESenhaForm();
+
+        public string RetornaEmail()
         {
-            Console.WriteLine("Digite o Email do OTRS:");
-            email = Console.ReadLine();
+            ColetaUserESenhaForm.ShowDialog();
+            var coletaDados = ColetaUserESenhaForm.RetornaUserESenha();
+            string email = coletaDados.Item1;
+            RetornaSenha();
             return email;
         }
-
-        public String ColetaDadosSenha()
+        public string RetornaSenha()
         {
-            Console.WriteLine("Digite a senha do OTRS:");
-            senha = Console.ReadLine();
+            var coletaDados = ColetaUserESenhaForm.RetornaUserESenha();
+            string senha = coletaDados.Item2;
             return senha;
         }
+
+
     }
 }
