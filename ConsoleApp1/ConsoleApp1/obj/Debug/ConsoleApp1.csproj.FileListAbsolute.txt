@@ -14,3 +14,4 @@ F:\CSharp Repo\Automacao-OTRS\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.cspr
 F:\CSharp Repo\Automacao-OTRS\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
 F:\CSharp Repo\Automacao-OTRS\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 F:\CSharp Repo\Automacao-OTRS\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+F:\CSharp Repo\Automacao-OTRS\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.ErroForm.resources
