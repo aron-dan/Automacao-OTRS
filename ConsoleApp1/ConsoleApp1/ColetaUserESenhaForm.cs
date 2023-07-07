@@ -20,15 +20,16 @@ namespace ConsoleApp1
             InitializeMyControl();
         }
 
-        public void buttonLogin_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Close();
         }
 
+
         public Tuple<string, string> RetornaUserESenha()
         {
-            string username = textBoxUsuario.Text;
-            string password = textBoxSenha.Text;
+            string username = textBox1.Text;
+            string password = textBox2.Text;
             return new Tuple<string, string>(username, password);
         }
         
@@ -46,7 +47,9 @@ namespace ConsoleApp1
         //}
         private void InitializeMyControl()
         {
-            textBoxSenha.PasswordChar = '*';
+            textBox2.PasswordChar = '*';
         }
+
+
     }
 }
