@@ -46,9 +46,8 @@ namespace ConsoleApp1
             catch (NoSuchElementException e)
             {
                 sucess = false;
-                //erroForm.ShowDialog();
             }
-            driver.Close();
+            //driver.Close();
 
         }
     

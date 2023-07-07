@@ -9,14 +9,9 @@ namespace ConsoleApp1
         AutomationWeb automationWeb = new AutomationWeb();
         ColetaDadosUsuario coletaDadosUsuario = new ColetaDadosUsuario();
         ColetaUserESenhaForm coletaUserESenhaForm = new ColetaUserESenhaForm();
-        
 
-            //coletaUserESenhaForm.ShowDialog();
             automationWeb.login();
             Console.ReadKey();
-            
-            
-
 
         }
     }
