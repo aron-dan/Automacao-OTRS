@@ -33,18 +33,7 @@ namespace ConsoleApp1
             return new Tuple<string, string>(username, password);
         }
         
-        //public string RetornaUsuarioForm()
-        //{
-        //    string user = textBoxUsuario.Text;
-        //    return user;
-        //}
-        //
-        //public string RetornaSenhaForm()
-        //{
-        //    textBoxSenha.Text = Convert.ToString(textBoxSenha);
-        //    string senha = textBoxSenha.Text;
-        //    return senha;
-        //}
+
         private void InitializeMyControl()
         {
             textBox2.PasswordChar = '*';

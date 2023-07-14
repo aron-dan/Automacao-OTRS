@@ -6,12 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium.Support.UI;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace ConsoleApp1
 {
     public class AutomationWeb
     {
         ColetaDadosUsuario coletaDadosUsuario = new ColetaDadosUsuario();
+        FormErroNadaDigitado formErroNadaDigitado = new FormErroNadaDigitado(); 
         ErroForm erroForm = new ErroForm();
         Program program = new Program();
         public IWebDriver driver;
@@ -23,6 +25,14 @@ namespace ConsoleApp1
 
                 string email = coletaDadosUsuario.RetornaEmail();
                 string senha = coletaDadosUsuario.RetornaSenha();
+                while (email == "" || senha == "")
+                {
+                    formErroNadaDigitado.ShowDialog();
+                email = coletaDadosUsuario.RetornaEmail();
+                senha = coletaDadosUsuario.RetornaSenha();
+
+            }
+                
                 driver = new ChromeDriver();
                 driver.Navigate().GoToUrl("https://atende.sempre.net.br/portal/index.html?RequestedURL=Action%3DAgentTicketEmail");
                 driver.FindElement(By.Id("User")).SendKeys(email);
